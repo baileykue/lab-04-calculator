@@ -1,24 +1,10 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { add_two, add } from '../calculations.js';
+import { add , subtract} from '../calculations.js';
 
 const test = QUnit.test;
 
 NodeIterator.test;
-
-test('time to test add_two', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
-    const expected = 4;
-    
-    //Act 
-    // Call the function you're testing and set the result to a const
-    const actual = add_two(2);
-
-    //Expect
-    // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
-});
 
 test('add function', (expect) => {
     const input1 = 3;
@@ -38,4 +24,24 @@ test('add function', (expect) => {
     const actual = add(input1, input2);
 
     expect.equal(actual, expected, 'success! test 4+5=9'); 
+});
+
+test('subtraction function', (expect) => {
+    const input1 = 10;
+    const input2 = 4;
+    const expected = 6;
+
+    const actual = subtract(input1, input2);
+
+    expect.equal(actual, expected, 'sucess! test 10-4=6');
+});
+
+test('subtraction function', (expect) => {
+    const input1 = 90;
+    const input2 = 40;
+    const expected = 50;
+
+    const actual = subtract(input1, input2);
+
+    expect.equal(actual, expected, 'sucess! test 90-40=50');
 });
