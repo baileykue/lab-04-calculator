@@ -1,0 +1,15 @@
+main {
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.calculation {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-family: 'VT323', monospace;
+}

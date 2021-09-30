@@ -27,5 +27,15 @@ test('add function', (expect) => {
 
     const actual = add(input1, input2);
 
-    expect.equal(actual, expected, 'success!'); 
+    expect.equal(actual, expected, 'success! test 3+2=5'); 
+});
+
+test('add function', (expect) => {
+    const input1 = 5;
+    const input2 = 4;
+    const expected = 9;
+
+    const actual = add(input1, input2);
+
+    expect.equal(actual, expected, 'success! test 4+5=9'); 
 });

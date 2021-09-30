@@ -9,19 +9,28 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
     <title>My Calculator</title>
 </head>
 
 <body>
-    <header>
-        <div class="gutter-right logo">
-            <img src="assets/big-logo.png" />
-        </div>
-    </header>
+    <h1>My Alchemy Calculator</h1>
     <main>
+            <div class="calculation">
+            <h2>Addition</h2>
+            <input id="input1" type="text">
+            +
+            <input id="input2" type="text">
+            =
+            <span id="add-output"></span>
+            <button id="add-button">Add</button>
+        </div>
+    </main>
         
-
-    <script type="module" src="./app.js"></script>
+    <script type="module" src="./calculations.js"></script>
 </body>
 
 </html>
