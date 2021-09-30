@@ -1,4 +1,4 @@
-import { add , subtract , multiply } from './calculations.js';
+import { add , subtract , multiply , divide } from './calculations.js';
 
 const addInput1 = document.getElementById('add-input1');
 const addInput2 = document.getElementById('add-input2');
@@ -36,3 +36,14 @@ multiplyButton.addEventListener('click', ()=>{
   multiplyAnswer.textContent = result; 
 });
 
+const divideInput1 = document.getElementById('divide-input1');
+const divideInput2 = document.getElementById('divide-input2');
+const divideButton = document.getElementById('divide-button');
+const divideAnswer = document.getElementById('divide-answer');
+
+divideButton.addEventListener('click', ()=>{
+  const value1 = Number(divideInput1.value);
+  const value2 = Number(divideInput2.value);
+  const result = divide(value1, value2);
+  divideAnswer.textContent = result; 
+});
