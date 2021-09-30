@@ -1,9 +1,9 @@
 main {
     margin: 10px;
-    width: 100%;
+    width: 60%;
     display: flex;
     justify-content: center;
-    
+    flex-direction: column;
 }
 
 .calculation {
@@ -13,6 +13,7 @@ main {
 
 h1, h2 {
     font-family: 'VT323', monospace;
+    text-align: center;
 }
 
 span {

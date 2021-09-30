@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { add , subtract , multiply , divide } from '../calculations.js';
+import { add , subtract , multiply , divide , modulo } from '../calculations.js';
 
 const test = QUnit.test;
 
@@ -84,4 +84,24 @@ test('division function', (expect) => {
     const actual = divide(input1, input2);
 
     expect.equal(actual, expected, 'sucess! test 45/9=5');
+});
+
+test('modulo function', (expect) => {
+    const input1 = 4;
+    const input2 = 2;
+    const expected = 0;
+
+    const actual = modulo(input1, input2);
+
+    expect.equal(actual, expected, 'sucess! test 4%2=0');
+});
+
+test('modulo function', (expect) => {
+    const input1 = 35;
+    const input2 = 4;
+    const expected = 3;
+
+    const actual = modulo(input1, input2);
+
+    expect.equal(actual, expected, 'sucess! test 35%4=3');
 });
