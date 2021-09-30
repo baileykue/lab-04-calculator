@@ -1,4 +1,4 @@
-import { add , subtract } from './calculations.js';
+import { add , subtract , multiply } from './calculations.js';
 
 const addInput1 = document.getElementById('add-input1');
 const addInput2 = document.getElementById('add-input2');
@@ -23,3 +23,16 @@ subtractButton.addEventListener('click', ()=>{
   const result = subtract(value1, value2);
   subtractAnswer.textContent = result; 
 });
+
+const multiplyInput1 = document.getElementById('multiply-input1');
+const multiplyInput2 = document.getElementById('multiply-input2');
+const multiplyButton = document.getElementById('multiply-button');
+const multiplyAnswer = document.getElementById('multiply-answer');
+
+multiplyButton.addEventListener('click', ()=>{
+  const value1 = Number(multiplyInput1.value);
+  const value2 = Number(multiplyInput2.value);
+  const result = multiply(value1, value2);
+  multiplyAnswer.textContent = result; 
+});
+
