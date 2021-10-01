@@ -1,16 +1,16 @@
 main {
-    margin: 10px;
+    margin: auto;
     width: 50%;
-    display: flex;
-    justify-content: center;
+   /* display: flex;
     flex-direction: column;
+    justify-content: center;*/
     background-color: #335C67;
 }
 
 .calculation {
     border: 1px solid black;
     padding: 20px;
-    position: relative;
+   
 }
 
 h2 {
@@ -55,6 +55,7 @@ span {
     font-family: 'VT323', monospace;
     color: #FFF3B0;
     padding: 10px;
+    
 }
 
 body{
