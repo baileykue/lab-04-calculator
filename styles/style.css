@@ -1,6 +1,6 @@
 main {
     margin: 10px;
-    width: 60%;
+    width: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -15,7 +15,7 @@ main {
 
 h2 {
     font-family: 'VT323', monospace;
-    text-align: center;
+    text-align: canter;
     color: #FFF3B0;
 }
 
@@ -25,9 +25,6 @@ h1 {
     color: #540B0E;
 }
 
-span {
-    display: block;
-}
 
 button {
     text-align: center;
@@ -47,7 +44,19 @@ button:hover {
 
 input {
     background-color: #9E2A2B;
-    width: 25%;
+    width: 150px;
     color: #FFF3B0;
     font-family: 'VT323', monospace;
+    text-align: center;
 }
+
+span {
+    font-size: 2rem;
+    font-family: 'VT323', monospace;
+    color: #FFF3B0;
+    padding: 10px;
+}
+
+body{
+    text-align:center;
+    }
